@@ -81,19 +81,36 @@ Watch the full application walkthrough demonstrating the Hybrid Architecture:
 ├── sample_equipment_data.csv # Test Data
 └── README.md               # Documentation
 
-## ⚙️ Setup Instructions
+## ⚙️ Installation & Run Instructions
 
-### 1. Backend (Django)
-The brain of the application. Must be running for frontends to work.
+You can run this project using **Docker** (Recommended) or **Manually**.
 
+### Option A: Docker (Fastest)
+If you have Docker installed, you can launch the Backend and Web App instantly.
+
+1.  **Build and Run:**
+    ```bash
+    docker-compose up --build
+    ```
+2.  **Access:**
+    * **Web App:** `http://localhost:3000`
+    * **Backend:** `http://localhost:8000`
+
+### Option B: Manual Setup
+
+#### 1. Backend (Django)
 ```bash
 # Navigate to backend folder
 cd chemical_project
 
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
 # Install dependencies
 pip install -r requirements.txt
 
-# Setup Database
+# Run Migrations
 python manage.py migrate
 
 # Start Server

@@ -18,4 +18,7 @@ RUN python manage.py collectstatic --noinput
 
 # 6. Start the Server (Using Gunicorn for Production)
 # Render automatically assigns a PORT, Gunicorn will use it.
-CMD gunicorn chemical_project.wsgi:application --bind 0.0.0.0:$PORT
+
+
+# 6. Create Admin User (if missing) and Start Server
+CMD python manage.py createsuperuser --noinput || true && gunicorn chemical_project.wsgi:application --bind 0.0.0.0:$PORT

@@ -1,22 +1,85 @@
 # ⚗️ Chemical Equipment Parameter Visualizer
 
-A Hybrid Application (Web + Desktop) for visualizing and analyzing chemical equipment data. Built with **Django**, **React**, and **PyQt5**.
+A full-stack **Hybrid Application** (Web + Desktop) for visualizing and analyzing chemical equipment data. Built with **Django**, **React**, and **PyQt5**, demonstrating a shared backend architecture across multiple platforms.
 
-## 🚀 Key Features
-* **Hybrid Architecture:** Single Django Backend serving both Web (React) and Desktop (PyQt5) frontends.
-* **Data Analytics:** Upload CSV files to calculate Average Temperature, Pressure, and Flow Rates.
-* **Visualization:** Interactive Charts (Chart.js & Matplotlib) and Data Tables.
-* **Reporting:** Auto-generated PDF Reports.
-* **Security:** Token-based Authentication (Login/Register) system.
-* **History:** Tracks the last 5 uploaded datasets.
-
-## 🛠️ Tech Stack
-* **Backend:** Python Django + Django REST Framework + SQLite
-* **Data Processing:** Pandas
-* **Web Frontend:** React.js + Chart.js + Axios
-* **Desktop Frontend:** PyQt5 + Matplotlib
+> **Intern Screening Task Submission**
 
 ---
+
+## 🚀 Live Demo
+* **Web Dashboard:** [INSERT_YOUR_RENDER_STATIC_SITE_URL_HERE]
+* **Backend API:** [INSERT_YOUR_RENDER_BACKEND_URL_HERE]
+
+*(Note: The Desktop Application can connect to either the Live API or a Local Server).*
+
+---
+
+## 📺 Demo Video
+Watch the full application walkthrough demonstrating the Hybrid Architecture:
+
+[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+
+*(Click the image above to watch the video)*
+
+---
+
+## 📸 Screenshots
+
+### 1. Web Dashboard (React)
+*Modern glassmorphism interface with interactive Chart.js analytics and data tables.*
+![Web Dashboard](screenshots/web.png)
+
+### 2. Desktop Application (PyQt5)
+*Native desktop experience connecting to the same cloud backend via REST API.*
+![Desktop App](screenshots/desktop.png)
+
+### 3. PDF Analysis Report
+*Auto-generated downloadable report with embedded analytics using ReportLab.*
+![PDF Report](screenshots/pdf.png)
+
+---
+
+## 🌟 Key Features
+* **Hybrid Architecture:** A single **Django REST Framework** API serving both a React Web App and a PyQt5 Desktop App simultaneously.
+* **Data Analytics:** Automated **Pandas** processing of CSV uploads to calculate Average Temperature, Pressure, and Flow Rates.
+* **Visualization:**
+    * **Web:** Interactive bar charts using **Chart.js**.
+    * **Desktop:** Embedded **Matplotlib** graphs within the PyQt5 window.
+* **Reporting:** Auto-generated **PDF Reports** with summary statistics.
+* **Security:** **Token-based Authentication** (Login/Register) with secure password hashing.
+* **History Management:** Database tracks and stores the last 5 uploaded datasets per user.
+* **Modern UI:** Consistent "Blue/White" design language across both platforms.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Backend** | Python Django + DRF | API & Business Logic |
+| **Database** | SQLite (Dev) / Postgres (Prod) | Data Storage |
+| **Data Processing** | Pandas | CSV Parsing & Statistics |
+| **Web Frontend** | React.js + Chart.js + Axios | Browser Interface |
+| **Desktop Frontend** | Python PyQt5 + Matplotlib | Native OS Interface |
+| **Deployment** | Docker + Render | Cloud Hosting |
+
+---
+
+## 📂 Project Structure
+
+```bash
+├── chemical_project/       # Django Backend
+│   ├── api/                # API Logic (Views, Serializers, Models)
+│   ├── Dockerfile          # Cloud Build Configuration
+│   ├── requirements.txt    # Python Dependencies
+│   └── manage.py
+├── web-frontend/           # React Web Application
+│   ├── src/                # React Components (LoginScreen, Dashboard)
+│   └── package.json
+├── main.py                 # Desktop Application Entry Point (PyQt5)
+├── docker-compose.yml      # Local Docker Orchestration
+├── sample_equipment_data.csv # Test Data
+└── README.md               # Documentation
 
 ## ⚙️ Setup Instructions
 

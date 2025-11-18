@@ -7,8 +7,8 @@ A full-stack **Hybrid Application** (Web + Desktop) for visualizing and analyzin
 ---
 
 ## 🚀 Live Demo
-* **Web Dashboard:** [INSERT_YOUR_RENDER_STATIC_SITE_URL_HERE]
-* **Backend API:** [INSERT_YOUR_RENDER_BACKEND_URL_HERE]
+* **Web Dashboard:** [https://chemical-equipment-parameter-visualizer-1-9nws.onrender.com]
+* **Backend API:** [https://chemical-equipment-parameter-visualizer-1-9nws.onrender.com]
 
 *(Note: The Desktop Application can connect to either the Live API or a Local Server).*
 

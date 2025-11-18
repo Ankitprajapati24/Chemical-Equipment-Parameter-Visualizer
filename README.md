@@ -17,7 +17,7 @@ A full-stack **Hybrid Application** (Web + Desktop) for visualizing and analyzin
 ## 📺 Demo Video
 Watch the full application walkthrough demonstrating the Hybrid Architecture:
 
-[![Watch the Demo](https://drive.google.com/file/d/1kW7xog2vgrURjSVpczQAo_86VIXuIb0c/view?usp=drive_link)
+[Watch the Demo](https://drive.google.com/file/d/1kW7xog2vgrURjSVpczQAo_86VIXuIb0c/view?usp=drive_link)
 
 *(Click the image above to watch the video)*
 
